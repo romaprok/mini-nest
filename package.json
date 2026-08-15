@@ -1,0 +1,28 @@
+{
+  "name": "mini-nest",
+  "version": "0.1.0",
+  "description": "Part 1 of 3 — a hand-written IoC container that mimics what NestJS does under the hood (design:paramtypes reflection, @Injectable/@Inject, scopes, cycle detection).",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "pretest": "npm run build",
+    "test": "node --test dist/test/*.test.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "ioc",
+    "dependency-injection",
+    "decorators",
+    "reflect-metadata",
+    "nestjs"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^6.0.3"
+  }
+}
