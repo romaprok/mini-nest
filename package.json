@@ -1,0 +1,42 @@
+{
+  "name": "mini-nest",
+  "version": "0.3.0",
+  "description": "Part 3 of 3 — full request lifecycle: Middleware → Guard → Interceptor → Pipe → Handler → Exception Filter, with AsyncLocalStorage for request-scoped context.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "pretest": "test -x node_modules/.bin/tsc && npm run build || true",
+    "test": "node --test dist/test/*.test.js",
+    "start": "node dist/src/main.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "ioc",
+    "dependency-injection",
+    "decorators",
+    "reflect-metadata",
+    "http",
+    "routing",
+    "validation",
+    "nestjs",
+    "lifecycle",
+    "guards",
+    "interceptors",
+    "pipes",
+    "filters",
+    "async-local-storage"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "reflect-metadata": "^0.2.2",
+    "zod": "^4.0.0-beta.20250515"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.3"
+  }
+}
